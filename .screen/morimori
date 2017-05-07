@@ -1,0 +1,5 @@
+source .screen/defaults
+
+#caption always "%{= dd}%h%-035= %{= wB}%l %Y-%m-%d %02c:%s"
+
+screen screen -qUmc morimori-leaf

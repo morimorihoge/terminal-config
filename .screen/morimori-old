@@ -1,0 +1,37 @@
+#3.3
+# Do not remove the above line. This screen rc file was updated
+# by the newsyntax script.
+startup_message off
+hardstatus alwayslastline "%w"
+#processio_code euc
+defflow off
+autodetach on
+vbell off
+vbell_msg ""
+bell "ell in window %."
+activity "ctivity in window %."
+crlf off
+#defscrollback 200
+msgwait 5
+msgminwait 3
+#defwrap on
+#defmonitor off
+#deflogin off
+#monitor off
+#login on
+escape ^Z^Z # C-z C-z : send ^Z to process
+bind '^k'
+bind '^\'
+bind '^g'
+bind '?' help # C-z ?: help
+bind '\\' quit # kill all window and terminate screen.
+bind 'K' kill # kill current screen
+bind '}' history
+bind '^a' other # C-z C-a, C-z a: other window
+bind 'a' other
+bind 'Z' suspend # C-z z, C-z Z: suspend screen
+bind 'z' suspend
+bind 'G' vbell # vbell toggle
+bind 'R' reset # reset screen
+bind 'P' screen 9 ppp
+term screen
